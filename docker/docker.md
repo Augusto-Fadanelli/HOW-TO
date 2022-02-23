@@ -1,10 +1,10 @@
 # Docker
-  * Links úteis:
-    * [Docker Hub](https://hub.docker.com/)
-    * [Docker MySQL](https://hub.docker.com/_/mysql)
-    * [Apostila](http://files.cod3r.com.br/apostila-docker.pdf)
-    
 ![Docker Logo](https://raw.githubusercontent.com/Augusto-Fadanelli/HOW-TO/main/docker/docker-logo.png)
+
+### Links úteis:
+  * [Docker Hub](https://hub.docker.com/)
+  * [Docker MySQL](https://hub.docker.com/_/mysql)
+  * [Apostila](http://files.cod3r.com.br/apostila-docker.pdf)
 
 ### Instalação
   * Arch Linux
@@ -14,7 +14,7 @@
     $ sudo docker run hello-world
     ````
 ### Comandos
-  * Iniciar serviço docker (Arch):
+  * Iniciar serviço docker:
     ````
     $ sudo systemctl start docker.service
     ````
