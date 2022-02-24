@@ -43,7 +43,13 @@
     ````
     $ git commit -m 'Informações do commit'
     ````
-  * Exemplo de `.gitignore`
-    ````
-    
-    ````
+  * Ignorar arquivos:
+    * `.gitignore` utiliza expressões regulares
+    * Linhas em branco ou começando com # são ignoradas
+    * Pode negar um padrão iniciando com !
+    * Exemplo de `.gitignore` (Utiliza regex)
+      ````
+      *.[oa]
+      *~
+      !lib.a
+      ````
