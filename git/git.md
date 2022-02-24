@@ -11,6 +11,16 @@
     $ git config --global user.name  "Nome"
     $ git config --global user.email "nome@example.com"
     ````
+  * Deslogar:
+    ````
+    $ git config --global --unset user.name
+    $ git config --global --unset user.email
+    $ git config --global --unset credential.helper
+    ````
+    ou
+    ````
+    $ git config --global --unset-all
+    ````
   * Inicializar repositório:
     ````
     $ mkdir nome_do_repositorio
@@ -47,7 +57,7 @@
     * `.gitignore` utiliza expressões regulares
     * Linhas em branco ou começando com # são ignoradas
     * Pode negar um padrão iniciando com !
-    * Exemplo de `.gitignore` (Utiliza regex)
+    * Exemplo de `.gitignore`:
       ````
       *.[oa]
       *~
