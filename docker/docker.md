@@ -2,6 +2,7 @@
 ![Docker Logo](https://raw.githubusercontent.com/Augusto-Fadanelli/HOW-TO/main/docker/docker-logo.png)
 
 ### Links úteis:
+  * [Docker Documentation](https://docs.docker.com/)
   * [Docker Hub](https://hub.docker.com/)
   * [Docker MySQL](https://hub.docker.com/_/mysql)
   * [Apostila](http://files.cod3r.com.br/apostila-docker.pdf)
@@ -14,7 +15,7 @@
     $ sudo docker run hello-world
     ````
     
-  * *Obs:. Para usar o docker com usuário não root, adicione seu usuário ao grupo docker, faça login novamente e reinicie o serviço docker.
+  * *Obs:. Para usar o docker com usuário não root, adicione seu usuário ao grupo docker, faça login novamente e reinicie o serviço docker.*
     
 ### Comandos
   * Iniciar serviço docker:
@@ -52,6 +53,10 @@
     $ docker container start ubuntu-teste
     $ docker container attach ubuntu-teste
     ````
+  * Executar bash em container iniciado:
+    ````
+    $ docker container exec -ti nome_do_container /bin/bash
+    ````
   * Parâmetro sleep:
     ````
     $ docker run -d ubuntu sleep 20
@@ -71,6 +76,10 @@
   * Remover todos os containers inativos:
     ````
     $ docker container prune
+    ````
+  * Remover imagem:
+    ````
+    $ docker image rmi id_da_imagem
     ````
   * Criar container e salvar dados com volumes:
     ````
