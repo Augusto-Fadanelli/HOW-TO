@@ -53,6 +53,10 @@
     ````
     $ git commit -m 'Informações do commit'
     ````
+  * Voltar um commit:
+    ````
+    $ git reset --hard
+    ````
   * Ignorar arquivos:
     * `.gitignore` utiliza expressões regulares
     * Linhas em branco ou começando com # são ignoradas
