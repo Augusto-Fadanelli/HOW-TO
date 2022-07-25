@@ -31,6 +31,16 @@
     ````
     $ git clone url_do_repositório
     ````
+  * Clonar com token:
+    ````
+    $ git clone https://token:x-oauth-basic@github.com/usuario/repositorio.git
+    ````
+  * Atualizar token:
+    ````
+    $ git remote remove origin
+    $ git remote add origin https://token:x-oauth-basic@github.com/usuario/repositorio.git
+    $ git remote -v
+    ````
   * Mostrar mudanças a serem comitadas:
     ````
     $ git status
